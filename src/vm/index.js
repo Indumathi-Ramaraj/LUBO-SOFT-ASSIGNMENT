@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   errorNotification,
   sucessNotification,
@@ -15,7 +15,7 @@ const useCategoriesApi = () => {
   const [loading, setLoading] = useState(true);
   const [addNewData, setNewData] = useState("");
   const [update, setUpdate] = useState({ id: null, value: "" });
-
+  const inputRef = useRef(null);
   const params = {
     deviceType: "web",
     username: "anvar",
@@ -112,10 +112,15 @@ const useCategoriesApi = () => {
         sortable: true,
         Cell: ({ row }) => {
           const isEditing = update.id === row.original.MAIN_CAT_ID;
-
+          useEffect(() => {
+            if (isEditing && inputRef.current) {
+              inputRef.current.focus();
+            }
+          }, [isEditing]);
           return isEditing ? (
             <div>
               <input
+                ref={inputRef}
                 className="bg-white border border-gray-300 h-8 rounded-md px-2 w-40"
                 value={update.value}
                 onChange={(e) =>
