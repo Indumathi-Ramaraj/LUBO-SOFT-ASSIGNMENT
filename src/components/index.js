@@ -1,8 +1,8 @@
 import React from "react";
-import { BiSolidPlusCircle } from "react-icons/bi";
 import ReactTable from "../common-components/ReactTable";
 import useCategoriesApi from "../vm";
 import PopOver from "../common-components/PopOver";
+import { BiSolidPlusCircle } from "react-icons/bi";
 import { PropagateLoader } from "react-spinners";
 import { warningNotification } from "../common-components/ToastMessage";
 

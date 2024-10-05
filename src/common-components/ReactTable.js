@@ -44,13 +44,11 @@ export default function ReactTable({ data, columns }) {
     useSortBy,
     usePagination
   );
-  const resetTableState = () => {
-    setCurrentPage(0);
-    setPageSize(10);
-  };
+
   useEffect(() => {
     if (data) {
-      resetTableState();
+      setCurrentPage(0);
+      setPageSize(10);
     }
   }, [data]);
   const pageButtonClass = "border border-gray-300 bg-gray-200 rounded-md px-2";
