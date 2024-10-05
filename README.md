@@ -16,4 +16,19 @@ The page will reload when you make changes.
 
 Builds the app for production to the `build` folder
 
+## Live Server
+https://lubo-soft-category-indumathi-ramaraj/
+## Features
+- Responsive Design
+- Added Table
+- Column Search
+- Column Sorting
+- Pagination
+- Tooltip
+- PopOver
+- Toast Message
+- Axios
+- React-spinner
+- React-Icons
+
 
