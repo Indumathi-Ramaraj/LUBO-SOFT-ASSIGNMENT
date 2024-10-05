@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App].
 
 ## Live Server
 
-https://lubo-soft-assignment.vercel.app/
+https://lubo-soft-assignment-3tpc.vercel.app/
 
 ## Available Scripts
 
