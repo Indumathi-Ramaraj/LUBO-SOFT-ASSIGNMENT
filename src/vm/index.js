@@ -173,7 +173,7 @@ const useCategoriesApi = () => {
         },
       },
     ],
-    [update]
+    [update, updateCategory, getCategories]
   );
 
   useEffect(() => {

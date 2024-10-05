@@ -50,7 +50,7 @@ export default function ReactTable({ data, columns }) {
       setCurrentPage(0);
       setPageSize(10);
     }
-  }, [data]);
+  }, [data, setPageSize, setCurrentPage]);
   const pageButtonClass = "border border-gray-300 bg-gray-200 rounded-md px-2";
   const pageRowCount = () => {
     if (currentPage + 1 === pageOptions.length) return rows.length;
